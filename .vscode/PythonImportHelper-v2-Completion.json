@@ -9,6 +9,15 @@
         "documentation": {}
     },
     {
+        "label": "adult",
+        "kind": 2,
+        "importPath": "crash-course.try_except",
+        "description": "crash-course.try_except",
+        "peekOfCode": "def adult(something):\n    #print(\"Age is \"+something)\n    try:\n        print(\"Age is \"+something)\n    except:\n        print(\"Failed to concat\")\n    finally:\n        print(\"End of program\")\nadult(20)",
+        "detail": "crash-course.try_except",
+        "documentation": {}
+    },
+    {
         "label": "name",
         "kind": 5,
         "importPath": "crash-course.variable_datatype",
