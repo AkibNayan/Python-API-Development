@@ -1,5 +1,41 @@
 [
     {
+        "label": "Animal",
+        "kind": 6,
+        "importPath": "crash-course.class",
+        "description": "crash-course.class",
+        "peekOfCode": "class Animal:\n    name = \"dog\"\n    color = 'brown'\nobj1 = Animal()\nclass Person:\n    def __init__(self, name:str, age:int):\n        self.name = name\n        self.age = age\n    def display(self):\n        return f\"My name is {self.name} and I'm {self.age} years old\"",
+        "detail": "crash-course.class",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "crash-course.class",
+        "description": "crash-course.class",
+        "peekOfCode": "class Person:\n    def __init__(self, name:str, age:int):\n        self.name = name\n        self.age = age\n    def display(self):\n        return f\"My name is {self.name} and I'm {self.age} years old\"\nobj = Person(\"Akib\", 24)\nprint(obj.display())",
+        "detail": "crash-course.class",
+        "documentation": {}
+    },
+    {
+        "label": "obj1",
+        "kind": 5,
+        "importPath": "crash-course.class",
+        "description": "crash-course.class",
+        "peekOfCode": "obj1 = Animal()\nclass Person:\n    def __init__(self, name:str, age:int):\n        self.name = name\n        self.age = age\n    def display(self):\n        return f\"My name is {self.name} and I'm {self.age} years old\"\nobj = Person(\"Akib\", 24)\nprint(obj.display())",
+        "detail": "crash-course.class",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "crash-course.class",
+        "description": "crash-course.class",
+        "peekOfCode": "obj = Person(\"Akib\", 24)\nprint(obj.display())",
+        "detail": "crash-course.class",
+        "documentation": {}
+    },
+    {
         "label": "get_name",
         "kind": 2,
         "importPath": "crash-course.function",
