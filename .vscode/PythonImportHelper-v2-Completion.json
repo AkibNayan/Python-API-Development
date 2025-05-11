@@ -1,5 +1,14 @@
 [
     {
+        "label": "get_name",
+        "kind": 2,
+        "importPath": "crash-course.function",
+        "description": "crash-course.function",
+        "peekOfCode": "def get_name(name:str) -> str:\n    #print(f\"Hello, {name}\")\n    return f\"Hello, {name}\"\nprint(type(get_name(\"akib\")))",
+        "detail": "crash-course.function",
+        "documentation": {}
+    },
+    {
         "label": "name",
         "kind": 5,
         "importPath": "crash-course.variable_datatype",
