@@ -1,0 +1,20 @@
+[
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "crash-course.variable_datatype",
+        "description": "crash-course.variable_datatype",
+        "peekOfCode": "name = \"Akib\"\nfrndname = \"Hasnain\"\nprint(name + \" and \" + frndname + \" are friends\")\nprint(f\"{name} and {frndname} both are friends\")\nprint(type(name))",
+        "detail": "crash-course.variable_datatype",
+        "documentation": {}
+    },
+    {
+        "label": "frndname",
+        "kind": 5,
+        "importPath": "crash-course.variable_datatype",
+        "description": "crash-course.variable_datatype",
+        "peekOfCode": "frndname = \"Hasnain\"\nprint(name + \" and \" + frndname + \" are friends\")\nprint(f\"{name} and {frndname} both are friends\")\nprint(type(name))",
+        "detail": "crash-course.variable_datatype",
+        "documentation": {}
+    }
+]
