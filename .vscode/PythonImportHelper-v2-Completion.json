@@ -45,6 +45,78 @@
         "documentation": {}
     },
     {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "crash-course.inheritence",
+        "description": "crash-course.inheritence",
+        "peekOfCode": "class Person:\n    def __init__(self, fname:str, lname:str)->None:\n        self.firstname = fname\n        self.lastname = lname\n    def printname(self)->None:\n        print(self.firstname, self.lastname)\nclass Student(Person):\n    def __init__(self, fname:str, lname:str, year:int)->None:\n        super().__init__(fname, lname)\n        self.graduationyear = year",
+        "detail": "crash-course.inheritence",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "crash-course.inheritence",
+        "description": "crash-course.inheritence",
+        "peekOfCode": "class Student(Person):\n    def __init__(self, fname:str, lname:str, year:int)->None:\n        super().__init__(fname, lname)\n        self.graduationyear = year\n    def display(self)->None:\n        print(self.firstname, self.lastname, self.graduationyear)\nobj = Student(\"Akib\", \"Nayan\", 2022)\nobj.display()\nprint(obj.firstname)\nprint(obj.lastname)",
+        "detail": "crash-course.inheritence",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"obj",
+        "kind": 5,
+        "importPath": "crash-course.inheritence",
+        "description": "crash-course.inheritence",
+        "peekOfCode": "\"\"\"obj = Person(\"Akib\", \"Nayan\")\nobj.printname()\"\"\"\n\"\"\"class Student(Person):\n    pass \nobj = Student(\"Akib\", \"Nayan\")\nobj.printname()\"\"\"\n\"\"\"class Student(Person):\n    def __init__(self, fname, lname):\n        Person.__init__(self, fname, lname)\nobj = Student(\"Akib\", \"Nayan\")",
+        "detail": "crash-course.inheritence",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "crash-course.inheritence",
+        "description": "crash-course.inheritence",
+        "peekOfCode": "obj = Student(\"Akib\", \"Nayan\")\nobj.printname()\"\"\"\n\"\"\"class Student(Person):\n    def __init__(self, fname, lname):\n        Person.__init__(self, fname, lname)\nobj = Student(\"Akib\", \"Nayan\")\nobj.printname()\"\"\"\n\"\"\"class Student(Person):\n    def __init__(self, fname, lname):\n        super().__init__(fname, lname)",
+        "detail": "crash-course.inheritence",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "crash-course.inheritence",
+        "description": "crash-course.inheritence",
+        "peekOfCode": "obj = Student(\"Akib\", \"Nayan\")\nobj.printname()\"\"\"\n\"\"\"class Student(Person):\n    def __init__(self, fname, lname):\n        super().__init__(fname, lname)\nobj = Student(\"Akib\", \"Nayan\")\nobj.printname()\"\"\"\n\"\"\"class Student(Person):\n    def __init__(self, fname, lname, year):\n        super().__init__(fname, lname)",
+        "detail": "crash-course.inheritence",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "crash-course.inheritence",
+        "description": "crash-course.inheritence",
+        "peekOfCode": "obj = Student(\"Akib\", \"Nayan\")\nobj.printname()\"\"\"\n\"\"\"class Student(Person):\n    def __init__(self, fname, lname, year):\n        super().__init__(fname, lname)\n        self.graduationyear = year\n    def display(self):\n        print(self.firstname, self.lastname, self.graduationyear)\nobj = Student(\"Akib\", \"Nayan\", 2022)\nobj.display()\"\"\"",
+        "detail": "crash-course.inheritence",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "crash-course.inheritence",
+        "description": "crash-course.inheritence",
+        "peekOfCode": "obj = Student(\"Akib\", \"Nayan\", 2022)\nobj.display()\"\"\"\nclass Person:\n    def __init__(self, fname:str, lname:str)->None:\n        self.firstname = fname\n        self.lastname = lname\n    def printname(self)->None:\n        print(self.firstname, self.lastname)\nclass Student(Person):\n    def __init__(self, fname:str, lname:str, year:int)->None:",
+        "detail": "crash-course.inheritence",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "crash-course.inheritence",
+        "description": "crash-course.inheritence",
+        "peekOfCode": "obj = Student(\"Akib\", \"Nayan\", 2022)\nobj.display()\nprint(obj.firstname)\nprint(obj.lastname)\nprint(obj.graduationyear)",
+        "detail": "crash-course.inheritence",
+        "documentation": {}
+    },
+    {
         "label": "adult",
         "kind": 2,
         "importPath": "crash-course.try_except",
