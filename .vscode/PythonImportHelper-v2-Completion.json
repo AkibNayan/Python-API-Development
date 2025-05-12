@@ -1,5 +1,13 @@
 [
     {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "Animal",
         "kind": 6,
         "importPath": "crash-course.class",
@@ -141,6 +149,15 @@
         "description": "crash-course.variable_datatype",
         "peekOfCode": "frndname = \"Hasnain\"\nprint(name + \" and \" + frndname + \" are friends\")\nprint(f\"{name} and {frndname} both are friends\")\nprint(type(name))",
         "detail": "crash-course.variable_datatype",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "fastapi_hello.main",
+        "description": "fastapi_hello.main",
+        "peekOfCode": "app = FastAPI()\n@app.get(\"/\")\nasync def root():\n    return {\"message\": \"Hello World\"}\n@app.get(\"/user\")\nasync def user():\n    return {\n        \"id\": 1,\n        \"name\": \"Akib\",\n        \"email\": \"akibnayan182@gmail.com\",",
+        "detail": "fastapi_hello.main",
         "documentation": {}
     }
 ]
