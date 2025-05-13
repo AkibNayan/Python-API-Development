@@ -8,6 +8,54 @@
         "documentation": {}
     },
     {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "Animal",
         "kind": 6,
         "importPath": "crash-course.class",
@@ -158,6 +206,42 @@
         "description": "fastapi_hello.main",
         "peekOfCode": "app = FastAPI()\n@app.get(\"/\")\nasync def root():\n    return {\"message\": \"Hello World\"}\n@app.get(\"/user\")\nasync def user():\n    return {\n        \"id\": 1,\n        \"name\": \"Akib\",\n        \"email\": \"akibnayan182@gmail.com\",",
         "detail": "fastapi_hello.main",
+        "documentation": {}
+    },
+    {
+        "label": "Role",
+        "kind": 6,
+        "importPath": "path_params.main",
+        "description": "path_params.main",
+        "peekOfCode": "class Role(str, Enum):\n    ADMIN=\"ADMIN\"\n    USER=\"USER\"\n@app.get(\"/user/{Role}\")\nasync def user(role:Role):\n    if role is role.ADMIN:\n        return JSONResponse(status_code=status.HTTP_200_OK, content={\n        \"message\": \"Welcome Admin\"\n    })\n    else:",
+        "detail": "path_params.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "path_params.main",
+        "description": "path_params.main",
+        "peekOfCode": "app = FastAPI()\n@app.get(\"/\")\nasync def health():\n    return {\n        \"message\": \"Hello\"\n    }\nclass Role(str, Enum):\n    ADMIN=\"ADMIN\"\n    USER=\"USER\"\n@app.get(\"/user/{Role}\")",
+        "detail": "path_params.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "query_params.main",
+        "description": "query_params.main",
+        "peekOfCode": "app = FastAPI()\n\"\"\"@app.get(\"/\")\nasync def index(q:str=\"empty\"):\n    print(q)\n    return {\n        \"message\": \"Hello\"\n    }\"\"\"\nfake_item_db:list[dict[str, int]] = [{\"item_name\": 1}, {\"item_name\": 2}, {\"item_name\": 3}]\n@app.get(\"/\")\nasync def index(start:int=0, limit:int=10):",
+        "detail": "query_params.main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "request_body.main",
+        "description": "request_body.main",
+        "peekOfCode": "app = FastAPI()\n@app.post(\"/\")\n@app.get(\"/\")\nasync def index():\n    return {\n        \"message\": \"Hello World\"\n    }",
+        "detail": "request_body.main",
         "documentation": {}
     }
 ]
