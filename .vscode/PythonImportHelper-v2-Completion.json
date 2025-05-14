@@ -240,7 +240,7 @@
         "kind": 5,
         "importPath": "request_body.main",
         "description": "request_body.main",
-        "peekOfCode": "app = FastAPI()\n@app.post(\"/\")\n@app.get(\"/\")\nasync def index():\n    return {\n        \"message\": \"Hello World\"\n    }",
+        "peekOfCode": "app = FastAPI()\n@app.post(\"/\")\nasync def store():\n    pass\n@app.get(\"/\")\nasync def index():\n    return {\n        \"message\": \"Hello World\"\n    }",
         "detail": "request_body.main",
         "documentation": {}
     }
